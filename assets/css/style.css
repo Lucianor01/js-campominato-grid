@@ -1,0 +1,60 @@
+:root{
+    --background: lightgreen;
+    --cellaAttiva: lightgreen;
+}
+
+#viewport{
+    height: 100vh;
+}
+
+header{
+    height: 8vh;
+}
+
+main{
+    height: 80vh;
+}
+
+.griglia{
+    max-width: 650px;
+}
+
+.box{
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: 65px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+.box_medium{
+    border: 1px solid black;
+    width: calc(100% / 9);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+.box_hard{
+    border: 1px solid black;
+    width: calc(100% / 7);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bg_light_green{
+    background-color: var(--cellaAttiva);
+}
+
+footer{
+    height: 8vh;
+}
