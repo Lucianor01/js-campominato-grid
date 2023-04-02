@@ -30,7 +30,9 @@ button.addEventListener('click', function () {
             divbox.addEventListener('click', function () {
                 this.classList.toggle('bg_light_green');
             });
-            griglia.append(divbox);
+            griglia.classList.add('griglia')
+            griglia.style.cssText = "border: 5px solid rgb(224, 188, 26); box-shadow: 0 0 25px rgb(224, 122, 26);"
+            griglia.append(divbox,);
         }
     } else if (difficoltà === 'medium') {
         for (let i = 1; i <= 81; i++) {
@@ -52,7 +54,17 @@ button.addEventListener('click', function () {
 
 })
 
-/* divbox.addEventListener('click', function () {
 
-    this.classList.toggle('bg_light_green')
-}) */
+//! ---------------------------- DARK-LIGHT MODE ---------------------------- !\\
+
+const lightMode = document.querySelector('#light_mode');
+const darkMode = document.querySelector('#dark_mode');
+const htmlTag = document.getElementsByTagName('html')[0];
+
+lightMode.addEventListener('click', function () {
+    htmlTag.dataset.bsTheme = 'light';
+});
+
+darkMode.addEventListener('click', function () {
+    htmlTag.dataset.bsTheme = 'dark';
+});

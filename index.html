@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,27 +16,44 @@
     <div id="viewport">
         <!-- HEADER -->
         <header class="d-flex justify-content-between p-2">
+            <!-- TITOLO PAGINA -->
             <div>
                 <h1>Campo Minato</h1>
             </div>
-    
+            
             <div class="d-flex align-items-center">
-                <i class="fa-solid fa-sun me-3"></i>
-                <i class="fa-solid fa-moon me-3"></i>
-                <span class="me-3">Difficoltà:</span>
-                <select id="difficoltà" class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-                <button type="button" class="btn btn-success">Play</button>
+                <!--!  INPUT DARK-LIGHT MODE -->
+                <div class="dark_light_mode pe-3">
+                    <label>
+                        <input type="radio" name="dark-light" id="dark_mode" checked>
+                        <span></span>
+                        <i class="fa-solid fa-moon pt-1"></i>
+                    </label>
+                    <label>
+                        <input type="radio" name="dark-light" id="light_mode">
+                        <span></span>
+                        <i class="fa-solid fa-sun pt-1"></i>
+                    </label>
+                </div>
+                
+                <!--* DIFFICOLTA' LIVELLO   -->
+                <div class="d-flex align-items-center">
+                    <span class="me-3">Difficoltà:</span>
+                    <select id="difficoltà" class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <button type="button" class="btn btn-success">Play</button>
+                </div>
             </div>
         </header>
     
         <!-- MAIN -->
-        <main class="bg-info bg-gradient">
+        <main class="">
+            <!--? CONTAINER CAMPO MINATO  -->
             <div class="container py-1 m-auto w-75 d-flex align-items-center h-100">
-                <div class="griglia m-auto d-flex flex-wrap w-100 h-1002 justify-content-center">
+                <div class="griglia m-auto d-flex flex-wrap w-100 ">
                     <!-- <div class="box">
                         1
                     </div>
