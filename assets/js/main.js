@@ -29,6 +29,7 @@ button.addEventListener('click', function () {
             const divbox = creaElementoHtml("div", "box", i);
             divbox.addEventListener('click', function () {
                 this.classList.toggle('bg_light_green');
+                console.log(this.innerText);
             });
             griglia.classList.add('griglia')
             griglia.style.cssText = "border: 5px solid rgb(224, 188, 26); box-shadow: 0 0 25px rgb(224, 122, 26);"
@@ -39,6 +40,7 @@ button.addEventListener('click', function () {
             const divbox = creaElementoHtml("div", "box_medium", i);
             divbox.addEventListener('click', function () {
                 this.classList.toggle('bg_light_green');
+                console.log(this.innerText);
             });
             griglia.append(divbox);
         }
@@ -47,6 +49,7 @@ button.addEventListener('click', function () {
             const divbox = creaElementoHtml('div', 'box_hard', i);
             divbox.addEventListener('click', function () {
                 this.classList.toggle('bg_light_green');
+                console.log(this.innerText);
             });
             griglia.append(divbox);
         }
